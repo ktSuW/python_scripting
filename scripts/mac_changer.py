@@ -4,6 +4,11 @@ import subprocess
 import optparse
 
 def get_arguments():
+    """Take input from user
+
+    Returns:
+        _type_: options (interface and new mac address entered by the user
+    """
     parser = optparse.OptionParser()
     parser.add_option("-i", "--interface", dest="interface", help="Interface to change its MAC address")
     parser.add_option("-m", "--mac", dest="new_mac_address", help="New MAC Address")
