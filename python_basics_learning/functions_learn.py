@@ -36,10 +36,10 @@ def testfunction(arg):
     print("ID inside the function: ", id(arg))
     arg = arg.append(100)
 
-var = [1, 2, 3, 4,5]
-print("ID before passing: ", id(var))
-testfunction(var)
-print("list after function call: ", var)
-print("ID after passing: ", id(var))
+# var = [1, 2, 3, 4,5]
+# print("ID before passing: ", id(var))
+# testfunction(var)
+# print("list after function call: ", var)
+# print("ID after passing: ", id(var))
 
 
