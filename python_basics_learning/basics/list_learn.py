@@ -13,6 +13,59 @@ in, not in boolean operators
 0   1   2   3   4   
 "a"     "b"     "c"     "d"     "e"
 """
+a1 = [4,5,8,9,2,3,1,10,6,7]
+a2 = ["yy", "jj", "mm", "BB", "aa", "ZZ"]
+
+# index(x[,start[,end]]), count(x), reverse(), sort(*, key=None, reverse=False)
+
+#============
+# list methods for list class - append, extend, insert, copy
+# append is only for one element, extend is for adding collections of elements, iterable
+# a1.append(21)
+# a1[6:6] = [23]
+# a1[len(a1):] = [14]
+# print(a1)
+
+# a1.extend((10,11,12)) # parameters must be iterable. list, tuple, string
+# a1.extend("apple") # string is iterable.
+# a1[len(a1):] = ["orange"]
+# print(a1)
+#======================
+# print(id(a1))
+# a1.insert(1,50) # it is a costly operateion if inserting at the beginning of the list 
+# print(a1)
+# print(id(a1)) # Same list is modified, therefore new object is not created.
+#======================
+# copy - create a shallow copy, clone of original list is created
+# a2 = a1.copy()
+# print(id(a1[0]))
+# print(id(a2[0]))
+#======================
+# print(a1)
+# a1.pop(2)
+# del a1[2]
+# print(a1)
+#======================
+# a1.remove(5)  # need to specify the element you want to delete, # if there is duplicates, will delete the first one
+# # a1.remove("apple") # gives ValueError
+#======================
+
+
+# i = 0
+# while i < len(a1):
+#     print(a1[i])
+#     i +=1
+# for i in range(len(a1)-1,-1,-1):
+#     print(a1[i])
+
+# for i in range(1,len(a1)):
+#     print(a1[i])
+    
+# for x in a1:
+#     print(x)
+    
+    
+    
 # lucky_numbers_list = [3,7,9,17,23]
 
 # for i in lucky_numbers_list:
@@ -46,11 +99,11 @@ item = 4
 # new_list = list4 + list5 + item
 # print(new_list)
 
-list4.extend([7,8,9])
-list5 = list5 + [10,11,12]
-list5 = list5*2
-# print(list5)
-if 4 in list5:
-    print("Found")
-else:
-    print("Not Found")
+# list4.extend([7,8,9])
+# list5 = list5 + [10,11,12]
+# list5 = list5*2
+# # print(list5)
+# if 4 in list5:
+#     print("Found")
+# else:
+#     print("Not Found")
