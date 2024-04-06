@@ -13,8 +13,165 @@ in, not in boolean operators
 0   1   2   3   4   
 "a"     "b"     "c"     "d"     "e"
 """
-a1 = [4,5,8,9,2,3,1,10,6,7]
-a2 = ["yy", "jj", "mm", "BB", "aa", "ZZ"]
+# Tuple Datatype - same as list, but it is immutable, cannot add or remove 
+# tuple1 = (1,2,3,4,5)
+# python built-in modules list
+"""
+tup1 = ()
+os - provides a unified interface to a number of os functions
+string - for string processing
+re = regex 
+math 
+datetime
+gc - builtin garbage collector
+asyncio - asynchronous processing
+Collections - advanced containter datatypes
+socket - low level networking interface
+sqlite3 -
+statistics
+typing 
+venv - creation of virtual environments
+json - encode and decode JSON format
+unittest - unit testing framework for python
+random - generate pseudo random numbers
+"""
+# only a number, string or tuple can be used as a key. All of them are immutable. Values can be any type
+japan_cities1 = {
+    "Tokyo": "Tokyo",
+    "Osaka": "Osaka",
+    "Kyoto": "Kyoto",
+    "Hiroshima": "Hiroshima",
+    "Sapporo": "Hokkaido",
+    "Nagoya": "Aichi",
+    "Fukuoka": "Fukuoka",
+    "Kobe": "Hyogo",
+    "Yokohama": "Kanagawa",
+    "Sendai": "Miyagi",
+    "Nara": "Nara",
+    "Kanazawa": "Ishikawa",
+    "Nagasaki": "Nagasaki",
+    "Kumamoto": "Kumamoto",
+    "Hakodate": "Hokkaido"
+}
+japan_cities2 = {
+    "Nara": "Nara",
+    "Kanazawa": "Ishikawa",
+    "Nagasaki": "Nagasaki",
+    "Kumamoto": "Kumamoto",
+    "Hakodate": "Hokkaido"
+}
+
+japan_cities_values = japan_cities1.get("ara") # returns the value mapped to the given key
+print(japan_cities_values)
+
+# s1 = {1,2,3,4,6,4,3,2}
+# print(s1)
+# python membership operators in, not in
+# identity operators - is, is not 
+# operator evalutes to True if both the operand objects share the same memory location.
+# memory location -> id() True
+# bitwise AND, OR, XOR, NOT left shift, right shift
+
+# s1 = {1, 2, 3, 7, 9}
+# # set is not a sequence data type
+# # cannot be accessed individually as they do not have a positional index, can only traverse the set items using a for loop
+# # s1.add(23)
+# # for num in s1:
+# #     print(num)
+# s2 = {"Hello", "world", 7, 9}#union
+# s3 = s1.union(s2)
+# # s1.update(s2)
+# # s1.remove(10) #KeyError - use discard instead
+# s1.pop() # remove random item from s1
+# s1.clear()
+# print(s1)
+# print(s1) # TypeError: unhashable type: 'list'
+# hasing generates a unique number for an immutable item that enables quick search
+# python built in function hash() is not supported by list or dictionary
+# t1 = (1, 1, 2, 3, 4, 4, 2, 6, 7, 9, 8, 7,7)
+# t2 = ()
+# for i in t1:
+#     if i not in t2:
+#         t2 +=(i,)
+        
+# print("Original tuple t1 : ", t1)
+# print("Unique numbers tuple t2 : ", t2)
+
+# import random
+
+# t1 = ()
+# for i in range(10):
+#     x = random.randint(0,10)
+#     if x not in t1:
+#         t1 +=(x,) 
+# print(t1)
+
+# cities = ("Osaka", "Nagoya", "Kagoshima", "Yokohama")
+# a,b,c,d = cities
+# print("a: ",a, "b: ", b)
+# tup1 = (12, 3, 45, 64, 23, 80)
+# indices = range(len(tup1))
+# for i in indices:
+#     print(f"tup1[{i}] : ", tup1[i])
+
+# + concatenate
+# a.extend(b)
+# tuple count() , index()
+
+# print(tup1[2])
+# tup1[2] = ("Hida no Sato")
+# del cities
+# print(cities[2])
+# machi = ("Amori", "Saitama", "Kochi")
+# print(cities+machi) # concatenation
+
+#==================
+# l1 = [None]*10
+# print(l1)
+#==================
+# a = [[1,2,3], [4,5,6], [7,8,9]]
+# b = [[10, 11, 12], [13, 14, 15], [16, 17, 18]]
+
+# c = []
+
+# for i in range(len(a)):
+#     s = []
+#     for j in range(len(a[0])):
+#         s.append(a[i][j] + b[i][j])
+#     c.append(s)
+
+# print(c)
+
+#==================
+# list = [1,2, ["a", "b", ["c", "d"]], 4,5]
+
+#==================
+# index, count, reverse, sort(*, key=None, reverse=False)
+#l1 = [expression for item in iterable]
+# iterable - str, range, str, tuple, list 
+# l1 = [x for x in range(10)]
+# l2 = [x**2 for x in range(1,6)]
+# l3 = [x for x in (10,5,7,8,12,3) if x%2==0]
+# print(l3)
+# l4 = [x.lower() for x in "Python"]
+# l5 = [x for x in 'ab123dsdf&4$hi2' if x.isalpha()]
+# print(l5)
+
+# data = input("Enter names: ").split()
+# print(data)
+
+#==================
+# a2 = ["yy", "jj", "mm", "BB", "aa", "ZZ"]
+# # a2.sort(key=str.lower)
+# sorted(a2) # Do not modify the original list
+# print(a2)
+#==================
+# a1 = [4,5,6, 8,9,2,3,1,10,6,7]
+# print(a1.count(6))
+# a1.reverse()
+# a1.sort()
+# print(a1)
+# print(a1.index(9,4,8))
 
 # index(x[,start[,end]]), count(x), reverse(), sort(*, key=None, reverse=False)
 
