@@ -1,0 +1,68 @@
+Question 1) -----------------------------------------------------------------------------------------------------------------
+
+The attached input file 'customers2.txt' contains duplicated and replicated records. 
+Write a program to count the number of times each record appears in the file.
+
+The output should look like the following (first name only):-
+
+{'fred': 1, 'homer': 2, 'kermit': 3, 'james': 2}
+
+
+Question 2) -----------------------------------------------------------------------------------------------------------------
+
+Modify the output from question 1 to sort the data by the number of occurrences in decending order.
+
+The output should look like the following:-
+
+{'kermit': 3, 'homer': 2, 'james': 2, 'fred': 1}
+
+
+Question 3) -----------------------------------------------------------------------------------------------------------------
+
+Using the attached input file 'cust_dept.txt' write a program to load the data into a structure called 'data' which groups the people by department. 
+The output using a pprint of 'data' should look like the following:-
+
+DEPARTMENTS
+{'accounts': [{'email': 'fred@somemail.com',
+               'first': 'fred',
+               'last': 'flint',
+               'phone': '987123',
+               'town': 'bedrock'},
+              {'email': ' pebbles@somemail.com',
+               'first': 'pebbles',
+               'last': 'flint',
+               'phone': '987124',
+               'town': 'bedrock'},
+              {'email': 'wilma@somemail.com',
+               'first': 'wilma',
+               'last': 'flint',
+               'phone': '987126',
+               'town': 'bedrock'}],
+ 'returns': [{'email': ' kermit@somemail.com',
+              'first': 'kermit',
+              'last': 'thefrog',
+              'phone': '765123',
+              'town': 'the swamp'},
+             {'email': 'james@somemail.com',
+              'first': 'james',
+              'last': 'kirk',
+              'phone': '009900',
+              'town': 'space'}],
+ 'shipping': [{'email': 'homer@somemail.com',
+               'first': 'homer',
+               'last': 'simpson',
+               'phone': '432567',
+               'town': 'springfield'},
+              {'email': ' dino@somemail.com',
+               'first': 'dino',
+               'last': 'flint',
+               'phone': '987125',
+               'town': 'bedrock'}]}
+
+Question 4) -----------------------------------------------------------------------------------------------------------------
+
+Write a function to search the departments 'data' structure above by phone number and return that person's details.
+
+
+
+

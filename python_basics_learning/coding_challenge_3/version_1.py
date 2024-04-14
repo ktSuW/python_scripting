@@ -10,8 +10,17 @@ def load_points(filename):
     points = {}
     filename = get_file_path(filename)
     try:
+        # create a context manager - automatically close the file thereby preventing leaking file descriptor, DB connection, etc.
+        # file1 = open(filename)
+        # file1_read = file1.read() - read the whole file into a string
+        # file1.close() - don't forget to close the file
+        # e.g. server program -overnight batch processing 
+        # every OS has limited amount of open file descriptor - single processor is allowed to have
+        # leaking file descriptor
+        # New way of - context manager
         with open(filename, 'r') as file:
-            lines = file.readlines()
+            lines = file.readlines() # read 
+            # for - only for list iteration
             for line in lines:
                 if ':' in line:
                     # to split ['E', '1 point'] and unpack the variables into two variables

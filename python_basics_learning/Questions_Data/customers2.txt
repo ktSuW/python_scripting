@@ -1,0 +1,11 @@
+fred,flint,bedrock,987123,fred@somemail.com
+homer,simpson,springfield,432567,homer@somemail.com
+kermit,the frog,the swamp,765123,kermit@somemail.com
+james,kirk,space,009900,james@somemail.com
+kermit,the frog,the swamp,765123,kermit@somemail.com
+kermit,the frog,the swamp,765123,kermit@somemail.com
+james,kirk,space,009900,james@somemail.com
+homer,simpson,springfield,432567,homer@somemail.com
+fred,flint,bedrock,987123,fred@somemail.com
+fred,flint,bedrock,987123,fred@somemail.com
+fred,flint,bedrock,987123,fred@somemail.com

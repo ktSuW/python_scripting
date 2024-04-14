@@ -1,0 +1,7 @@
+fred,flint,bedrock,987123,fred@somemail.com,accounts
+homer,simpson,springfield,432567,homer@somemail.com,shipping
+kermit,thefrog,the swamp,765123,kermit@somemail.com,returns
+james,kirk,space,009900,james@somemail.com,returns
+dino,flint,bedrock,987125,dino@somemail.com,shipping
+pebbles,flint,bedrock,987124,pebbles@somemail.com,accounts
+wilma,flint,bedrock,987126,wilma@somemail.com,accounts

@@ -183,3 +183,9 @@ dict9 = {((exp, exp) for item in enumerate(iterable))}
 #     "B" : "- . . ."
 # }
 # # print(morse_code2)
+
+# Context Manager
+# Iterators
+# String
+# Screen scraping - web services - JSON 
+# Networking 

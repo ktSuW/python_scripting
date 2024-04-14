@@ -1,0 +1,155 @@
+
+Question 1) -----------------------------------------------------------------------------------------------------------------
+
+
+Below are some examples of letters and their Morse code equivalent:
+
+A = . -
+B = - . . .
+C = - . - .
+D = - . .
+E = .
+F = . . - .
+G = - - .
+
+Write a program to encode the following words into Morse code: 'BAG', 'CAB, and 'ACE'
+
+Example Output:
+
+	B -> - . . .
+	A -> . -
+	G -> - - .
+	--------
+	C -> - . - .
+	A -> . -
+	B -> - . . .
+	--------
+	A -> . -
+	C -> - . - .
+	E -> - .
+	--------
+
+
+Question 2) -----------------------------------------------------------------------------------------------------------------
+
+
+Below is an example URL sent from a Web Browser after the user fills in a search form with three search criteria: 
+
+https://example.com/?product=shirt&color=red&size=m
+
+The part of the URL following the '?' is the query string containing the form values being submited to the server.
+
+Write a program to parse the query string into a dictionary with the search criteria as the keys and the user's choices as the values.
+
+Example Output:
+
+	Search Options {'product': 'shirt', 'color': 'red', 'size': 'm'}
+
+
+Question 3) -----------------------------------------------------------------------------------------------------------------
+
+
+Below are the score values used in Scrabble for each letter.
+
+A:1 point
+B:3 points
+C:3 points
+D:2 points
+E:1 point
+F:4 points
+G:2 points
+H:4 points
+I:1 point
+J:8 points
+K:5 points
+L:1 point
+M:3 points
+N:1 point
+O:1 point
+P:3 points
+Q:10 points
+R:1 point
+S:1 point
+T:1 point
+U:1 point
+V:4 points
+W:4 points
+X:8 points
+Y:4 points
+Z:10 points 
+
+Write a program to prompt the user for a word, then output the score for the word.
+If the user enters 'quit' the program ends.
+Allow the user to enter words in upper or lower case.
+
+Example Output:
+
+	Enter a Word: dog
+
+	WORD: dog -> SCORE: 5
+
+	Enter a Word: Horse
+
+	WORD: Horse -> SCORE: 8
+
+	Enter a Word: Xylophone
+
+	WORD: Xylophone -> SCORE: 24
+
+	Enter a Word: quit
+	
+Hint: read the scores as a multi-line string and use the 'splitlines()' method to get started
+
+
+Question 4) -----------------------------------------------------------------------------------------------------------------
+
+
+Below are two lists, one for keys and one for values
+
+Create a dictionary from the two lists.
+
+	keys = [ 'key1', 'key2', 'key3', 'key4' ]
+
+	values = [ 11, 22, 33, 44 ]
+
+Example Output:
+
+	{'key1': 11, 'key2': 22, 'key3': 33, 'key4': 44}
+
+BONUS - how many different ways can you achieve the same result.
+
+
+Question 5) -----------------------------------------------------------------------------------------------------------------
+
+
+Write a program to perform a word count on a passage of text.
+
+Example:
+
+text = "Jack was hungry. He walked to the kitchen. He got out some eggs. He took out some oil. He placed a skillet on the stove. Next, he turned on the heat. He poured the oil into the skillet. He cracked the eggs into a bowl. He stirred the eggs. Then, he poured them into the hot skillet. He waited while the eggs cooked. They cooked for two minutes. He heard them cooking. They popped in the oil."
+
+Example Output:
+
+	{'jack': 1, 'was': 1, 'hungry': 1, 'he': 11, 'walked': 1, 'to': 1, 'the': 10, 'kitchen': 1, 'got': 1, 'out': 2, 'some': 2, 'eggs': 4, 'took': 1, 'oil': 3, 'placed': 1, 'a': 2, 'skillet': 3, 'on': 2, 'stove': 1, 'next': 1, 'turned': 1, 'heat': 1, 'poured': 2, 'into': 3, 'cracked': 1, 'bowl': 1, 'stirred': 1, 'then': 1, 'them': 2, 'hot': 1, 'waited': 1, 'while': 1, 'cooked': 2, 'they': 2, 'for': 1, 'two': 1, 'minutes': 1, 'heard': 1, 'cooking': 1, 'popped': 1, 'in': 1} 
+
+
+Question 6) -----------------------------------------------------------------------------------------------------------------
+
+
+Modify the output from the previous question to sort the data by the number of occurrences in decending order.
+
+Example Output:
+
+	[('he', 11), ('the', 10), ('eggs', 4), ('oil', 3), ('skillet', 3), ('into', 3), ('out', 2), ('some', 2), ('a', 2), ('on', 2), ('poured', 2), ('them', 2), ('cooked', 2), ('they', 2), ('jack', 1), ('was', 1), ('hungry', 1), ('walked', 1), ('to', 1), ('kitchen', 1), ('got', 1), ('took', 1), ('placed', 1), ('stove', 1), ('next', 1), ('turned', 1), ('heat', 1), ('cracked', 1), ('bowl', 1), ('stirred', 1), ('then', 1), ('hot', 1), ('waited', 1), ('while', 1), ('for', 1), ('two', 1), ('minutes', 1), ('heard', 1), ('cooking', 1), ('popped', 1), ('in', 1)]
+
+
+Question 7) -----------------------------------------------------------------------------------------------------------------
+
+
+Modify the output from the previous question to only output words which have occured more than once.
+
+Example Output:
+
+	[('he', 11), ('the', 10), ('eggs', 4), ('oil', 3), ('skillet', 3), ('into', 3), ('out', 2), ('some', 2), ('a', 2), ('on', 2), ('poured', 2), ('them', 2), ('cooked', 2), ('they', 2)]
+
+
