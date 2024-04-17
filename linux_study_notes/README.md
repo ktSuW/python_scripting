@@ -53,11 +53,27 @@
     - install the dhcp package and configure it to allocate IP addresses to client machines within the network.
     - sudo dnf install dhcp
 
-
-
-
 ## Wed 17 April 
 
+- Architectur of unix
+  - hardware (Processor ALU - arithmic logical unit) <--> kernel (core component of OS) <--> shell (interpreter - convert to machine language) <--> commands (predefined programs) <--> executed by users
+  - RHEL - BASH shell 
+
+- Kernel types
+    - monolithic kernel - Linux
+    - micro - windows 
+- Kernel manages : device info, multitasking info, file system info. 
+    - Resource management - Kernel manages and allocates system resources like CPU time, memory, and disk space to various processes running on the computer
+    - process management - It handles the creation, execution and termination of processes. Each command you run in Bash, for instance, results in the kernel creating and managing processes
+    - device drivers - kernel includes drivers that allow it to work with different hardware devices
+    - System calls - 
+- Virtulisation
+    - Window -> Hyper-V - Hyper-V is Microsoft's hardware virtualization product. It lets you create and run a software version of a computer, called a virtual machine. Each virtual machine acts like a complete computer, running an operating system and programs. Hyper-V runs directly on the hardware, or can be hosted in Windows, making it a Type 1 or Type 2 hypervisor depending on the configuration.
+    - Linux - KVM (Kernel based virtual machine)
+    - Oracle -> virtual Box
+    - VMware -> workstation 
+
+## Thurs 18 April 
 - systemd
 - journald
 

@@ -2,6 +2,7 @@
 
 import os
 import json
+from pprint import pprint
 
 def get_file_path(filename):
     dir_path_for_file = os.path.dirname(os.path.abspath(__file__))
@@ -14,22 +15,50 @@ def group_customers_by_department(cust_dept_filename):
         lines = file.readlines()
         # print(lines)
         for line in lines:
-            line = line.strip()
+            # line = line.strip()
             if not line:
                 continue
-            customer_raw_data_full = line.split(',')
-            keys = ['first', 'last', 'town', 'phone','email', 'department']
+            record = line.rstrip().split(',')
+            
+            # customer_info = {}
+            
+            # tuple unpacking , it is tuple of variables on LHS, tuple of values on RHS
+            first, last, town, phone,email, department = record 
+            
+            customer_info = {'first': first, 'last': last, 'town': town, 'phone' : phone, 'email':email }
+            
+            # customer_info['first'] = first 
+            # customer_info['last'] = last 
+            # customer_info['town'] = town 
+            # customer_info['phone'] = phone 
+            # customer_info['email'] = email 
+            
+            # customer_raw_data_full = record[:5]
+            # department = record[5]
+            # print("+++++++++++++++++++")
+            # print(department)
+            
             # Create a customer data in dictionary using dictionary comprehension
-            customer_info = {keys[i] : customer_raw_data_full[i].strip() for i in range(len(keys))}
-            department = customer_info['department']
-            del customer_info['department']
+            # customer_info = {keys[i] : customer_raw_data_full[i].strip() for i in range(len(keys))}
+            
+            # customer_info = { k:v for k,v in zip(keys, customer_raw_data_full)}
+            # print("=============================")
+            # print(customer_info)
+            # department = customer_info['department']
+            # del customer_info['department']
 
             # if there is existing department, add the dictionary to that existing list
-            if department in customers_group:
-                customers_group[department].append(customer_info)
-            else:
-                customers_group[department] = [customer_info]  
+            # if department in customers_group:
+            #     customers_group[department].append(customer_info)
+            # else:
+            #     customers_group[department] = [customer_info]  
             
+            if not department in customers_group:
+                customers_group[department] = []
+                
+            customers_group[department].append(customer_info)
+            
+    # pprint(customers_group)        
     return customers_group
 
 # Write a function to search the departments 'data' structure above by phone number and return that person's details.
@@ -46,7 +75,8 @@ def main():
     customers_group = group_customers_by_department(file_path)
     # print(json.dumps(customer_details, indent=3, sort_keys=False))
     customer_details = search_customer_info_by_phone_num(customers_group)
-    print(customer_details)
+    pprint(customers_group)
+    
     
 if __name__ == '__main__':
     main()
