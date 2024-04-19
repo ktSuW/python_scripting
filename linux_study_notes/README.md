@@ -76,6 +76,45 @@
 ## Thurs 18 April 
 - systemd
 - journald
+- Installation
+
+## Fri 19 April 
+
+- File System Hierarchy 
+- <img src="../img/linux_file_system_hierarchy.png">
+- <img src="../img/fhs.png">
+- Window
+    - Mount point - there is no drive letters concept in linux 
+    - Window - top level directory \  it means harddisk C:\, D:\
+- Linux 
+    - Without drive letters, we can identify the device
+    - Use mount point
+    - forward slash / is a top level directory, parent directory for all other directories
+    - users
+        - Admin (window) -> root (linux) - home directory for root user
+        - Guest (window) -> normal (linux)\
+    - / top level dir
+    - /root for root user
+    - /home for normal user
+    - /boot - static files of the boot loader
+        - GRUB2 -> RHEL 7.0, 8.0 & 9.0
+        - GRUB -> RHEL 6.0
+        - LILO -> 5.0, 4.0, 3.0, 2.0
+    - /etc contains host specific system configuration files e.g. httpd
+    - /bin  contains normal user executable commands 
+    - /sbin contains super user executable commands 
+    - /usr UNIX resource repositorycontains program file 
+    - /opt optional for usr 
+    - /var contains - /var is a standard subdirectory of the root directory in Linux and other Unix-like operating systems that contains files to which the system writes data during the course of its operation.
+    - /run - real time information, media, 
+    - /proc - contains background running processes (background running processes)
+        - like Task Manager in window
+        - #cat/proc/cpuinfo
+        - #cat/proc/meminfo
+    - ram, swap
+    - [Linux Filesystem Hierarchy](https://tldp.org/LDP/Linux-Filesystem-Hierarchy/html/index.html)
+     - https://refspecs.linuxfoundation.org/FHS_3.0/fhs/index.html
+
 
 
 
