@@ -112,6 +112,8 @@
         - #cat/proc/cpuinfo
         - #cat/proc/meminfo
     - ram, swap
+        - dynamic ram
+        - swap- virtual ram
     - [Linux Filesystem Hierarchy](https://tldp.org/LDP/Linux-Filesystem-Hierarchy/html/index.html)
      - https://refspecs.linuxfoundation.org/FHS_3.0/fhs/index.html
 
@@ -122,3 +124,66 @@
 
 </details>
 
+----
+
+<details>
+  <summary> Week-2-Intro</summary>
+
+## Mon 22 April 
+- /mnt contains empty dir. By default, mnt dir will be created. To create a mount point for any partition
+- /lib contains library files. In windows, we have got dll files. Sharable objects
+- /sys  contains system related config files. OS related files 
+- /srv - /srv directory contains data for servers. If you are running a web server from your Linux box, your HTML files for your sites would go into /srv/http (or /srv/www). If you were running an FTP server, your files would go into /srv/ftp
+- /tmp contains temporary files 
+- symbolic links -> equivalent of shortcuts
+- Shortcuts
+    - /bin -> /usr/bin
+    - /sbin -> /usr/sbin
+    - /lib -> /usr/lib
+    - /lib64 -> /usr/lib64
+- `sudo apt install tree`
+- `tree / -L 1`
+    - tree - list the contents of directories in a tree like format
+    - / specifies the root directory as a starting point for the tree command
+    - L level 
+    - 1 specifies a single level of directories , if you don't specify it , it will show all sub directories 
+- su - root
+    - switch user
+- Absolute vs relative paths
+    - Absolute path
+        - Starts from the root directory: On Unix-like systems, this is indicated by the leading slash (/), and on Windows, it starts with a drive letter followed by a colon and a backslash (e.g., C:\).
+        - Unambiguous: Because it starts from the root directory and includes all necessary directory names, an absolute path directly points to its location on the filesystem without any ambiguity.
+        - Example on Unix/Linux: /home/user/documents/file.txt
+    - Relative paths
+        - A relative path points to a file or directory in relation to the current working directory (CWD) of the user or application. It does not begin with a root directory. 
+        - Dependent on the current directory: Its effectiveness depends on the directory from which it is referenced.
+        - Simpler and shorter: Often used to avoid typing long paths, especially when working deeply nested within a directory structure.- May include special characters: Such as . (current directory) and .. (parent directory) to navigate the filesystem.
+        - Example: If your current directory is /home/user, and you want to refer to file.txt inside documents, the relative path would be documents/file.txt. If you need to move up to the parent directory, you might use ../otheruser/file.txt.
+- command option argument 
+- $ means normal user, # means root user
+- uname -r or -a => to find out the kernel version
+    - display kernel release of the operating system
+    - -a provides all available system information -a stands for all
+    - kernel name
+    - node name (host name of the system)
+    - kernel release (version number)
+    - kernel version (additional detail about kernel build)
+    - machine (hardware name)
+- Predefined variables (environmental variables)
+- `echo $HOME` - predefined variable => capital letters
+    - `pwd` vs `echo $HOME`
+    - `echo $SHELL` - to findo out the shell version
+- **Shell types**
+    - Bash (Bourne Again SHell): The most widely used shell on Linux. It's known for its user-friendliness and powerful scripting capabilities.
+    - sh (Bourne Shell): The original Unix shell, now less commonly used directly but still influential.
+    - zsh (Z Shell): Known for its interactive use features like improved tab completion and shared history.
+    - csh (C Shell): Its syntax is praised for being more C-like, making it appealing to programmers familiar with C.
+    - tcsh: An enhanced version of csh, with additional interactive features.
+
+- Shell
+    - is a ommand line interpreter that provides a user interface for access to OS' services
+- Readings:
+    - https://www.linuxfoundation.org/blog/blog/classic-sysadmin-the-linux-filesystem-explained#:~:text=The%20%2Fsrv%20directory%20contains%20data,go%20into%20%2Fsrv%2Fftp.
+    - https://en.wikipedia.org/wiki/Unix_filesystem#Conventional_directory_layout
+
+</details>
