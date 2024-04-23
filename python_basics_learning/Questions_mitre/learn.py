@@ -10,6 +10,19 @@ Python lambdas are little, annoymous functions, give concise syntax than regular
 - The title() method returns a string where the first character in every word is upper case. Like a header, or a title. If the word contains a number or a symbol, the first letter after that will be converted to upper case.
 - anonymous /lambda functions/lambda expression/ lambda abstractions/lambda form/function literals
 """
+# uvicorn learn:app --reload
+# http://127.0.0.1:8000/hello_world-api?name=Takashii
+
+from fastapi import FastAPI
+app = FastAPI()
+@app.get("/hello_world-api")
+def hello_world(name : str):
+    return f"Hello World, {name}!"
+
+# https://anderfernandez.com/en/blog/how-to-create-api-python/
+# https://www.dataquest.io/blog/python-api-tutorial/
+# https://medium.com/@asvinjangid.kumar/creating-your-own-api-in-python-a-beginners-guide-59f4dd18d301
+
 # Higher order function
 # In python, a function can be assigned to a variable. This assignment does not call the function, instead a reference to that function is created
 # def shout(text):
