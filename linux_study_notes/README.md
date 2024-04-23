@@ -186,4 +186,49 @@
     - https://www.linuxfoundation.org/blog/blog/classic-sysadmin-the-linux-filesystem-explained#:~:text=The%20%2Fsrv%20directory%20contains%20data,go%20into%20%2Fsrv%2Fftp.
     - https://en.wikipedia.org/wiki/Unix_filesystem#Conventional_directory_layout
 
+## Tue 23 April
+- `date`, `date +%T`, `date +%D`
+- `date --h`
+- `timedatectl status` : display the current timezone along with other information about the system clock and synchronization status.
+    - RTC - real time clock
+    - NTP network time protocol - sync with NTP server
+- `timedatectl list-timezones | grep -i australia/sydney` - search for australia/sydney
+- `sudo timedatectl set-timezone Australia/Sydney`
+- `timedatectl status`
+- `time` + tab 
+    - All words start with time
+    - `time-admin`, `timedatectl`, `timed-read`, `timed-run`
+- `id username` - displays the user and group IDs (UID and GID) along with the groups a user belongs to.
+- `id root`
+    - `id -u` only user ID, `id -g username` - show only primary group ID, `id -G username` - show all groups as IDs
+- `tty`
+    - text only terminal 
+    - Each TTY in Linux is represented as a device file located in the /dev directory (e.g., /dev/tty1, /dev/ttyS0).
+    - `who` : see who is logged in on which TTY.
+    - `who -a`
+        - run-level 5 means GUI
+- `cat` : Concatenate FILE(s) to standard output.
+    - read, create, and concatenate files. display text files, combine files, and redirect output in terminal or scripts.
+    - `cat > file1.txt` : create a new file by redirecting the output of cat to a file
+    - After you are done, `ctrl + d` : to save the text and exit 
+    - `cat >> file1.txt `: >> append text tot the end of the existing file without overwriting the original content
+    - `cat < file1.txt` : print the file 
+    - `cat -n file1.txt` : See the line number for each line of the output 
+- `touch` : change tile timestamps
+    - change file timestamps—specifically, the access and modification times of files and directories.
+    - `touch yourfilename{1..4}.txt` 
+    - `touch -d "yesterday" filename`: Why change file timestamp?
+        - Forensic or testing purposes: When simulating file activity from different times for testing or forensic analysis.
+        - Preserve chronological order: In a scenario where file timestamps need to reflect a specific sequence, despite the actual creation times.
+        - Scripting and automation: Adjust file timestamps as part of a larger scripted process or system setup.
+- `mkdir`
+    - -m, --mode=MODE  set file mode (as in chmod), not a=rwx - umask
+    - -p, --parents  no error if existing, make parent directories as needed, with their file modes unaffected by any -m option.
+    - -v, --verbose print a message for each created directory
+    - -Z   set SELinux security context of each created directory to the default type
+    - `mkdir -p japan/osaka/kansai/namba`
+    - `tree -L 1` : print tree structure 
+
+
+
 </details>
