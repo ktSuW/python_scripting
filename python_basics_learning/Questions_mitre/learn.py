@@ -1,3 +1,12 @@
+# Lambda
+
+
+
+
+
+
+
+
 """
 BeautifulSoup
 requests
@@ -13,11 +22,11 @@ Python lambdas are little, annoymous functions, give concise syntax than regular
 # uvicorn learn:app --reload
 # http://127.0.0.1:8000/hello_world-api?name=Takashii
 
-from fastapi import FastAPI
-app = FastAPI()
-@app.get("/hello_world-api")
-def hello_world(name : str):
-    return f"Hello World, {name}!"
+# from fastapi import FastAPI
+# app = FastAPI()
+# @app.get("/hello_world-api")
+# def hello_world(name : str):
+#     return f"Hello World, {name}!"
 
 # https://anderfernandez.com/en/blog/how-to-create-api-python/
 # https://www.dataquest.io/blog/python-api-tutorial/
