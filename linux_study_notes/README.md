@@ -229,6 +229,40 @@
     - `mkdir -p japan/osaka/kansai/namba`
     - `tree -L 1` : print tree structure 
 
+## Wed 24 April 2024
 
+-  `mkdir -p OSAKA/{Linux/{Rhcsa,Rhce},Windows/{osaka,kyoto}}`
+    ```
+        └── OSAKA
+            ├── Linux
+            │   ├── Rhce
+            │   └── Rhcsa
+            └── Windows
+                ├── kyoto
+                └── osaka
+    ````
+- `total 12` - blob count 
+    - typical block sizes for many filesystems, which means each directory takes up one block
+    - Each directory (Rhce and Rhcsa) occupies 4096 bytes.
+- `cp -rvf dir1 dir2`
+    - "force." It tells the cp command to overwrite files without asking for confirmation if a file with the same name exists at the destination.
+    - v - verbose
+    - r - recursive 
+- `mv` 
+- `rm f*` 
+- Soft Links (Symbolic Links):
+    - A symbolic link, or soft link, is a type of file that is a reference or shortcut to another file or directory. It doesn't contain the data in the file it links to but rather a path to it.
+    - To create a soft link, use the ln -s command.
+- Hard Links:A hard link is another name for an existing file on the same filesystem. Unlike a symbolic link, a hard link is indistinguishable from the original file. Creating a hard link effectively creates another entry for the same file in the filesystem's table, so changes to the file are reflected in all hard links.
+    - To create a hard link, use the ln command without the -s option.
+    - Both the original and the link share the same inode (the filesystem's internal identifier for files), meaning they are essentially the same file.
+- Key Differences:
+    - Persistence: If you delete the original file, a soft link to it becomes a broken link and no longer works. A hard link, however, remains fully functional.
+    - Cross-filesystem: Soft links can point to files on different filesystems, whereas hard links can only link to files on the same filesystem.
+    - Directories: Soft links can link to directories. Hard links to directories are typically not allowed (except for special links like . and .. inside directories themselves), due to the potential for creating filesystem loops.
+
+## Thurs 25 April 
+
+## Fri 26 April 
 
 </details>
