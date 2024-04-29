@@ -263,6 +263,46 @@
 
 ## Thurs 25 April 
 
+- Files Types
+    - hyphen Normal file
+    - d for directory
+    - c for character files (keyboard, mouse)
+    - b for block files - HDD, DVD, CD, etc.
+    - l for link files
+        - soft link ==> shortcut 
+        - hard link ==> backup file 
+- `cd dev/` - dev contains device files, `ls -l`
+    - check for files starts with b, c, d, l, etc.
+- `file filename` - to get the type of file
+    - `file dev`
+    - `file lib`
+    - `file tmp` : sticky, directory
+- How to create a softlink
+    - `ln -s /home/kali/tokyo tokyo_shortcut`
+    - `cat >> tokyo_shortcut` - append the contents to the file
+    - `du -h` 
+        - du => disk usage 
+        - h => human readable format
+    - `inode` - identification part of the file , identify the file, contains properties of file apart from name
+    - `ls -i` - inode number of files
+- Hard link is ONLY for file, not for directory
+    - `ln /home/student/hardl hl`
+    - `ls -i hl`
+- `ls`
+    - `ls .hiddenfile` - . will hide fil/directory
+    - `ls -al` - can see hidden files/dirs
+    - How to unhide the files/dir - `mv .hidden hidden`
+    - `ls -ld dirname` - find out directory
+    - `ls -al [kf]*` - find files start with k or f
+    - `ls -al [!kf]*` - find files start with k or f
+- `touch bat mat rat hat cat fat lat`
+    - `ls -al *at` vs `ls -al ?at`
+    - `ls -l ?` - one letter file
+    - `ls -l ??` - two letter file
+    - `ls -l ???` - three letter file
+    - `ls -l ????` - four letter file 
+    - `ls -l [a-d]*`- any files starts with a to d
+
 ## Fri 26 April 
 
 </details>
