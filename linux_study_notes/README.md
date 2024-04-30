@@ -127,7 +127,7 @@
 ----
 
 <details>
-  <summary> Week-2-Intro</summary>
+  <summary> Week-2-file system hierarchy,cat, cp, mv, soft vs hard links, file types, inode, vim shortcuts</summary>
 
 ## Mon 22 April 
 - /mnt contains empty dir. By default, mnt dir will be created. To create a mount point for any partition
@@ -305,4 +305,71 @@
 
 ## Fri 26 April 
 
+- server configuration and edit files
+- /etc - contains config file
+- `command mode` - you cannot edit
+- **Insert**
+    - `insert mode` - `i`
+    - `end of line insert mode` - `A`
+    - `next letter insert mode` - `a`
+    - `Starting of the line insert mode` - `I`
+    - `adding line below the curser` - `o`
+    - `adding line above the curser`
+- `visual mode` - `v`
+- `escape` - go back to command mode
+- Extended command mode 
+    - `:w` - `save`
+    - `:q` - `quit`
+    - `:x` - `save and quit`
+    - `/` - `search for word`
+    - `:s/Linux/Windows` - `one`
+    - `%s/Linux/Windows` - `all`
+    - `:se nu` - `serial no`
+    - `:set number`
+- Command mode options
+    - `gg` - `start of the page` - 
+    - `G` - `End of page`
+    - `nw` - `word by word curser forward`
+    - `nb` - `word by word curser backward` 
+    - `ndd` - `cut the line`
+    - `p` - `paste` 
+    - `u` - `undo`
+    - `ctrl + r` - `redo`
+    - `nyy` - `copy line`
+- Assign password 
+    - `:X` - assign password
+    - removing password - same
+- `vim -o file1 file2`
+- `ctrl + w`  - switch from one file to another file 
+- `:wqa` - to save all files 
+- `vimtutor` - [vimtutor](https://web02.gonzaga.edu/faculty/talarico/EE406/20162017/Cad/VIMTutor.pdf)
+
 </details>
+
+---
+
+<details>
+  <summary> Week-3- </summary>
+</details>
+
+---
+
+<details>
+  <summary> Week-4- </summary>
+</details>
+
+---
+
+<details>
+  <summary> Week-5- </summary>
+</details>
+
+---
+
+<details>
+  <summary> Week-6- </summary>
+</details>
+
+---
+
+
