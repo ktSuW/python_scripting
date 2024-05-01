@@ -14,9 +14,7 @@
 # print(next(l1_itr))
 #StopIteration error - end of sequence
 
-## Generators - works like iterator
-
-
+## Generators - works like iterator - Inner
 def Days():
     days = ['sun', 'mon', 'tue', 'wed', 'thurs', 'fri', 'sat']
     i = 0
