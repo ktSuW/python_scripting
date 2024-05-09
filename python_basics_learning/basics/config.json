@@ -1,0 +1,20 @@
+{
+    "system_logs": {
+        "enabled": "False",
+        "path": "/var/log/system/test",
+        "format": "syslog",
+        "security_level": "medium"
+    },
+    "application_logs": {
+        "enabled": false,
+        "path": "/var/log/applications/",
+        "format": "json",
+        "security_level": "medium"
+    },
+    "network_logs": {
+        "enabled": true,
+        "path": "/var/log/network/",
+        "format": "csv",
+        "security_level": "low"
+    }
+}

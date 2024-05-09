@@ -1,0 +1,13 @@
+{
+  "Name": "Tanaka",
+  "age": 40,
+  "studies": [
+    "Python",
+    "Linux",
+    "Java"
+  ],
+  "isEmployed": true,
+  "hobbies": [
+    "travelling"
+  ]
+}
