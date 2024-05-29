@@ -1,0 +1,13 @@
+Rows in BGL_log_1.csv but not in BGL_log_2.csv:
+EventId                                                                    EventTemplate
+     E1 <*> ddr error(s) detected and corrected on rank <*>, symbol <*> over <*> seconds
+     E2        <*> ddr errors(s) detected and corrected on rank <*>, symbol <*>, bit <*>
+   E113                                                                shutdown complete
+   E119                total of <*> ddr error(s) detected and corrected over <*> seconds
+
+Rows in BGL_log_2.csv but not in BGL_log_1.csv:
+EventId                                                                        EventTemplate
+     E1 Testing ddr error(s) detected and corrected on rank <*>, symbol <*> over <*> seconds
+     E2        Testing ddr errors(s) detected and corrected on rank <*>, symbol <*>, bit <*>
+   E113                                                            testing shutdown complete
+   E119            testing total of <*> ddr error(s) detected and corrected over <*> seconds
