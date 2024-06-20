@@ -1,7 +1,7 @@
 # Docker Beginner course notes
 
 ## Docker Intro
-- Why we need docker?
+- Why we need docker? Testing
 - End to end application stacks
   - web server - nodejs, express
   - DB - mongoDB
